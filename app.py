@@ -485,7 +485,6 @@ load_custom_css()
 # ============================================
 # SIDEBAR NAVIGATION
 # ============================================
-st.sidebar.image("https://via.placeholder.com/200x80/1f77b4/ffffff?text=HR+Analytics", use_container_width=True)
 st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 page = st.sidebar.radio(
@@ -1340,21 +1339,10 @@ elif page == "📈 Organizational Insights":
                 default=top_features[:1],
                 help="Select one or more factors to simulate changes"
             )
-        
-        with col2:
-            st.markdown("#### Or Add Custom Factor")
-            manual_feature = st.text_input(
-                "Enter factor name:",
-                "",
-                help="Leave empty to skip",
-                placeholder="e.g., satisfaction_level"
-            )
 
         # Build interventions
         interventions = []
         chosen = sel_top.copy()
-        if manual_feature.strip():
-            chosen.append(manual_feature.strip())
 
         if chosen:
             st.markdown("### ⚙️ Define Changes for Selected Factors")
