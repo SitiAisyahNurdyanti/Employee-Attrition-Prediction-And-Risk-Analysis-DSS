@@ -76,7 +76,7 @@ streamlit run app.py
 *   **SHAP Analysis Charts:** Horizontal bar visualization showing local contribution values.
 *   **Department Overviews:** Aggregate dynamic charts pinpointing structural issues.
 
-## 🎥 Demo
+## Demo
 * Demo Link: `https://projekakhirdss-on94h8yhpjz7p4hbpd3qtq.streamlit.app/`
 
 ## 👥 Developed By
